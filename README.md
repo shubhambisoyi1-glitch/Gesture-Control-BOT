@@ -2,13 +2,13 @@
 
 A wireless hand-gesture-controlled robot built using two ESP8266 NodeMCU boards, an MPU6050 sensor, ESP-NOW communication, and an L298N motor driver.
 
-##  Project Overview
+## Project Overview
 
 This project enables a robot to move according to hand gestures. The user wears or holds a transmitter module containing an MPU6050 accelerometer and an ESP8266. Hand movements are detected and converted into commands, which are transmitted wirelessly using ESP-NOW to another ESP8266 mounted on the robot.
 
 The receiver ESP8266 processes the commands and controls the motors through an L298N motor driver.
 
-##  Features
+## Features
 
 - Wireless communication using ESP-NOW
 - Real-time gesture recognition
@@ -18,7 +18,7 @@ The receiver ESP8266 processes the commands and controls the motors through an L
 
 ---
 
-##  Components Used
+## Components Used
 
 ### Transmitter Unit
 
@@ -39,31 +39,33 @@ The receiver ESP8266 processes the commands and controls the motors through an L
 
 ---
 
-##  Hardware Connections
+![alt text](476f9688-b6a9-4f60-928c-e86c82548543.png)
+
+## Hardware Connections
 
 ### MPU6050 → ESP8266 (Transmitter)
 
-| MPU6050 | ESP8266 |
-|---------|---------|
-| VCC | 3.3V |
-| GND | GND |
-| SDA | D2 (GPIO4) |
-| SCL | D1 (GPIO5) |
+| MPU6050 | ESP8266    |
+| ------- | ---------- |
+| VCC     | 3.3V       |
+| GND     | GND        |
+| SDA     | D2 (GPIO4) |
+| SCL     | D1 (GPIO5) |
 
 ### L298N → ESP8266 (Receiver)
 
 | L298N | ESP8266 |
-|-------|---------|
-| IN1 | D1 |
-| IN2 | D2 |
-| IN3 | D3 |
-| IN4 | D4 |
+| ----- | ------- |
+| IN1   | D1      |
+| IN2   | D2      |
+| IN3   | D3      |
+| IN4   | D4      |
 
 ### Motor Connections
 
-| Motor | L298N |
-|-------|-------|
-| Left Motor | OUT1, OUT2 |
+| Motor       | L298N      |
+| ----------- | ---------- |
+| Left Motor  | OUT1, OUT2 |
 | Right Motor | OUT3, OUT4 |
 
 ### Power Connections
@@ -89,10 +91,11 @@ The receiver ESP8266 processes the commands and controls the motors through an L
 
 ---
 
-##  Installation
+## Installation
 
 1. Clone this repository:
 
 ```bash
 
 https://github.com/shubhambisoyi1-glitch/Gesture-Control-BOT.git
+```
